@@ -16,11 +16,11 @@ Crie um arquivo `.env` com base no `.env-example` com o comando `cp .env-example
 
 * **Envio de dados do cliente para API**
 
-Será criado um arquivo `.txt` no diretório `/incoders-api/output/` com os dados do cliente para cada e-mail processado apenas para simular a persistência de dados
+Será criado um arquivo `.txt` no diretório `incoders-api/output/` com os dados do cliente para cada e-mail processado apenas para simular a persistência de dados
 
 * **Download dos anexos**
 
-Serão salvos no diretório `/nfse/` os arquivos `.xml` anexos ao e-mail processado
+Serão salvos no diretório `nfse/` os arquivos `.xml` anexos ao e-mail processado
 
 ### Tests
 `docker exec -it incoders-php-fpm vendor/bin/phpunit`
