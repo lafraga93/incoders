@@ -1,0 +1,5 @@
+.phpunit.result.cache
+.env
+/vendor/
+/nfse/*.xml
+/incoders-api/output/*.txt
