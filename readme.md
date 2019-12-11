@@ -5,7 +5,9 @@
 ## Incoders PHP Developer Test
 
 ### Before Up
-Crie um arquivo `.env` com base no `.env-example` com o comando `cp .env-example .env` e defina as credenciais de acesso à caixa de e-mail
+Crie um arquivo `.env` com base no `.env-example` com o comando `cp .env-example .env`, defina as credenciais de acesso à caixa de e-mail e defina o **critério de filtro** que será utilizado na busca por mensagens na caixa
+
+Por padrão, este parâmetro está definido como `UNSEEN`, considerando que essa caixa só receberá e-mails com notas fiscais formatadas no devido padrão
 
 ### Up
 `docker-compose up`
