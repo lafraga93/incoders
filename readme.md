@@ -7,7 +7,7 @@
 ### Before Up
 Crie um arquivo `.env` com base no `.env-example` com o comando `cp .env-example .env` e defina as credenciais de acesso à caixa de e-mail através das respectivas variáveis e o **critério de filtro** através da variável `criteria` que será utilizado na busca por mensagens na caixa
 
-Este parâmetro já está definido por padrão como `UNSEEN`, considerando que essa caixa será utilizada apenas para recebimento de e-mails de notas fiscais
+Este parâmetro já está definido por padrão como `UNSEEN` (não lidos), considerando que essa caixa será utilizada apenas para recebimento de e-mails de notas fiscais
 
 ### Up
 `docker-compose up`
