@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/lafraga93/incoders.svg?token=F151pxsdoT3qniXoG3Ne&branch=master)](https://travis-ci.com/lafraga93/incoders)
+
 ## Incoders PHP Developer Test
 
 ### Before Up
