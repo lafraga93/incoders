@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.com/lafraga93/incoders.svg?token=F151pxsdoT3qniXoG3Ne&branch=master)](https://travis-ci.com/lafraga93/incoders)
 [![BCH compliance](https://bettercodehub.com/edge/badge/lafraga93/incoders?branch=master)](https://bettercodehub.com/)
+[![StyleCI](https://github.styleci.io/repos/227192193/shield?branch=master)](https://github.styleci.io/repos/227192193)
 
 ## Incoders PHP Developer Test
 
