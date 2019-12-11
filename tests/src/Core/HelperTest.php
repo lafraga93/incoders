@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use App\Core\Helper;;
+use App\Core\Helper;
 use PHPUnit\Framework\TestCase;
 
 final class HelperTest extends TestCase

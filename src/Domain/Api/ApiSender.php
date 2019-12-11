@@ -23,7 +23,7 @@ final class ApiSender implements ApiSenderInterface
         $client = new Client();
 
         $response = $client->request('POST', $this->apiUrl, [
-            'body' => $data
+            'body' => $data,
         ]);
 
         return $response->getStatusCode();

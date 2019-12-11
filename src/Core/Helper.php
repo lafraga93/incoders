@@ -9,7 +9,7 @@ final class Helper
     /**
      * @param string $text
      * @param string $occ
-     * @param  array $keys
+     * @param array  $keys
      */
     public static function filterMailContent($text, $occ, $keys): string
     {
@@ -21,13 +21,11 @@ final class Helper
         $data = explode('|', $text);
 
         foreach ($keys as $key => $value) {
-
             $content[$value] = trim(str_replace(
                 $occ, '', substr(
                     $data[$key], strpos($data[$key], $occ) + strlen($occ)
                 ))
             );
-
         }
 
         return json_encode($content);
