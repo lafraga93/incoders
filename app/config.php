@@ -5,7 +5,7 @@ declare(strict_types=1);
 use PhpImap\Mailbox;
 
 set_exception_handler(function ($e) {
-    echo 'Exception: ' . $e->getMessage();
+    echo 'Exception: '.$e->getMessage();
     die();
 });
 
