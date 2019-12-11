@@ -12,20 +12,26 @@ final class MailProcessor implements MailProcessorInterface
     /**
      * @var Mailbox
      */
-    private $mailbox;
+    private $box;
+
+    /**
+     * @var string
+     */
+    private $criteria;
 
     public function __construct(Mailbox $mailbox)
     {
-        $this->mailbox = $mailbox;
+        $this->box = $mailbox;
+        $this->criteria = getenv('criteria');
     }
 
     public function searchMails(): array
     {
         $mails = [];
-        $mailsIds = $this->mailbox->searchMailbox('UNSEEN');
+        $mailsIds = $this->box->searchMailbox($this->criteria);
 
         foreach ($mailsIds as $mailId) {
-            array_push($mails, $this->mailbox->getMail($mailId));
+            array_push($mails, $this->box->getMail($mailId));
         }
 
         return $mails;
