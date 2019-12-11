@@ -9,20 +9,24 @@ use GuzzleHttp\Client;
 final class ApiSender implements ApiSenderInterface
 {
     /**
+     * @var Client
+     */
+    private $client;
+
+    /**
      * @var string
      */
     private $apiUrl;
 
-    public function __construct()
+    public function __construct(Client $client)
     {
+        $this->client = $client;
         $this->apiUrl = getenv('api_url');
     }
 
     public function submit(string $data): int
     {
-        $client = new Client();
-
-        $response = $client->request('POST', $this->apiUrl, [
+        $response = $this->client->request('POST', $this->apiUrl, [
             'body' => $data,
         ]);
 
